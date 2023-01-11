@@ -69,7 +69,7 @@ contract LossOnFeeChecker {
             governanceFee = governanceFee + strategistFeeAmount + performanceFeeAmount;
         }
 
-        return grossProfit > governanceFee;
+        return grossProfit >= governanceFee;
     }
 }
 
